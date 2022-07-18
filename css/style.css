@@ -10,14 +10,15 @@
   display: none;
 }
 .header .menu a {
-  font-weight: 500;
   text-decoration: none;
   margin: 0 0.3rem;
   color: rgb(53, 53, 53);
 }
 .header .menu a:hover {
-  text-decoration: underline;
-  color: rgb(114, 114, 114);
+  opacity: 0.5;
+}
+.header .signin:hover {
+  color: #0075FF;
 }
 
 .title-sub {
@@ -184,9 +185,11 @@ html {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  min-height: 90vh;
 }
 
 .portfolio {
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,6 +212,7 @@ html {
 
 .about {
   padding: 1rem 0;
+  min-height: 50vw;
 }
 
 .statistics {

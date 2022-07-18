@@ -1,6 +1,6 @@
 # This is the Final Project
 
-![Design preview for the coinbase.com](../coinbase.com/assets/img/filecover1.png)
+![Design preview for the coinbase.com](./coinbase.com/assets/img/filecover1.png)
 
 ## [Preview-site](https://mo-ani.github.io/CoinBase.com/html/)
 

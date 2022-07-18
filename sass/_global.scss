@@ -23,9 +23,11 @@ html{
 .home{
     @include mixins.flex-column;
     padding: 2rem 0;
+    min-height: 90vh;
 }
 
 .portfolio{
+    min-height: 90vh;
     @include mixins.flex-column;
     padding: 1rem 0;
     .features-container{
@@ -49,6 +51,7 @@ html{
 
 .about{
     padding: 1rem 0;
+    min-height: 50vw;
 }
 
 .statistics{
