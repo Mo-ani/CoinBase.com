@@ -1,0 +1,63 @@
+@use "mixins";
+
+$gray: #F8F9FA;
+$gray-hover: rgb(114, 114, 114);
+$black: rgb(53, 53, 53);
+$blue-main: #0075FF;
+
+
+html{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100vw;
+    padding: 0 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    @include mixins.flex-center;
+    gap: 1rem;
+}
+.home{
+    @include mixins.flex-column;
+    padding: 2rem 0;
+}
+
+.portfolio{
+    @include mixins.flex-column;
+    padding: 1rem 0;
+    .features-container{
+        padding: 1rem 0;  
+        .feature{
+            .description{
+                padding: 1rem 1.5rem;
+                p{
+                    opacity: .8;
+                }
+            }
+        }
+    }
+    .stats-img{
+        img{
+            width: 100%;
+            padding: 1rem 0;
+        }
+    }
+}
+
+.about{
+    padding: 1rem 0;
+}
+
+.statistics{
+    margin: 0 0 3rem 0;
+}
+
+.footer{
+    .jumbotron{
+        max-width: 330px;
+        margin: 0 auto;
+    }
+}

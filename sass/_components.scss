@@ -1,0 +1,150 @@
+@use "mixins";
+
+$gray: #F8F9FA;
+$gray-hover: rgb(114, 114, 114);
+$black: rgb(53, 53, 53);
+$blue-main: #0075FF;
+
+.header{
+    padding: 8px 0;
+    width: 100vw;
+    @include mixins.flex-around;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    .menu{
+        display: none;
+        a{
+            font-weight: 500;
+            text-decoration: none;
+            margin: 0 .3rem;
+            color: $black;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: $gray-hover;
+        }
+    }
+}
+//title-sub
+.title-sub{
+    @include mixins.tittle-sub;
+}
+
+.info-card{
+    @include mixins.flex-column;
+    padding: 2rem;
+    .home-header{
+        @include mixins.flex-center;
+        color: $blue-main;
+        i{
+            margin-left: 2px;
+            font-size: 1.5rem;
+        }
+        p{
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+    .home-desc{
+        max-width: 300px;
+        h1{
+            font-size: 3rem;
+        }
+    }
+    .suscribe{
+        @include mixins.flex-column;
+        button{
+            margin-top: 1rem;
+        }
+    }
+}
+//Feature portfolio-section
+
+.portfolio{
+    @include mixins.flex-column;
+    .features-container{
+        .feature{
+            @include mixins.flex-center;
+            width: 22rem;
+            margin: 0 auto;
+            i{ 
+                font-size: 3rem;
+                margin: 0 1rem;
+                color: $blue-main;
+            }
+            & .description{
+                p{
+                    color: $gray-hover;
+                }
+            }
+        }
+    }
+}
+
+//Cards about section
+
+.about{
+    .cards-container{
+        @include mixins.flex-column;
+    .cards{
+        text-align: center;
+        height: 25rem;
+        max-width: 25rem;
+        i{
+            font-size: 5rem;
+            color: $blue-main;
+        }
+        .description{
+            margin: 2rem 0;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+}
+
+//statistics > stats 
+.statistics{
+    @include mixins.flex-column;
+    background-color: $blue-main;
+    text-align: center;
+    padding: 3rem;
+    .stats{
+        span{
+            font-size: 2.3rem;
+            font-weight: 600;
+            color: $gray;
+        }
+        p{
+            color: $gray;
+            font-size: .8rem;
+        }
+    }
+}
+
+//items proccess section
+.proccess{
+    margin-bottom: 2rem;
+    .items{
+        @include mixins.flex-column;
+        i{
+            font-size: 5rem;
+            color: $blue-main;
+        }
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+.footer{
+    background-color: #F4F7FE;
+    padding: 3rem;
+    .jumbotron{
+        @include mixins.flex-column;
+        align-items: flex-start;
+        p{
+            opacity: .8;
+        }
+    }
+}

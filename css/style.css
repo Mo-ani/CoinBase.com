@@ -1,0 +1,301 @@
+.header {
+  padding: 8px 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+.header .menu {
+  display: none;
+}
+.header .menu a {
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  color: rgb(53, 53, 53);
+}
+.header .menu a:hover {
+  text-decoration: underline;
+  color: rgb(114, 114, 114);
+}
+
+.title-sub {
+  text-align: center;
+}
+.title-sub p {
+  opacity: 0.5;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.info-card .home-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0075FF;
+}
+.info-card .home-header i {
+  margin-left: 2px;
+  font-size: 1.5rem;
+}
+.info-card .home-header p {
+  margin: 0;
+  font-weight: 500;
+}
+.info-card .home-desc {
+  max-width: 300px;
+}
+.info-card .home-desc h1 {
+  font-size: 3rem;
+}
+.info-card .suscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-card .suscribe button {
+  margin-top: 1rem;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .features-container .feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22rem;
+  margin: 0 auto;
+}
+.portfolio .features-container .feature i {
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #0075FF;
+}
+.portfolio .features-container .feature .description p {
+  color: rgb(114, 114, 114);
+}
+
+.about .cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .cards-container .cards {
+  text-align: center;
+  height: 25rem;
+  max-width: 25rem;
+}
+.about .cards-container .cards i {
+  font-size: 5rem;
+  color: #0075FF;
+}
+.about .cards-container .cards .description {
+  margin: 2rem 0;
+}
+.about .cards-container .cards a {
+  text-decoration: none;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0075FF;
+  text-align: center;
+  padding: 3rem;
+}
+.statistics .stats span {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #F8F9FA;
+}
+.statistics .stats p {
+  color: #F8F9FA;
+  font-size: 0.8rem;
+}
+
+.proccess {
+  margin-bottom: 2rem;
+}
+.proccess .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.proccess .items i {
+  font-size: 5rem;
+  color: #0075FF;
+}
+.proccess .items span {
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #F4F7FE;
+  padding: 3rem;
+}
+.footer .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.footer .jumbotron p {
+  opacity: 0.8;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100vw;
+  padding: 0 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.portfolio .features-container {
+  padding: 1rem 0;
+}
+.portfolio .features-container .feature .description {
+  padding: 1rem 1.5rem;
+}
+.portfolio .features-container .feature .description p {
+  opacity: 0.8;
+}
+.portfolio .stats-img img {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.about {
+  padding: 1rem 0;
+}
+
+.statistics {
+  margin: 0 0 3rem 0;
+}
+
+.footer .jumbotron {
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home .info-card {
+    align-items: flex-start;
+  }
+  .home .suscribe {
+    margin-top: 2rem;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .home .suscribe button {
+    width: 170px;
+    margin: 0;
+  }
+  .statistics {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .proccess .items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .proccess .items-container .items {
+    text-align: center;
+  }
+  .proccess .items-container .items i {
+    margin-top: 2rem;
+  }
+  .footer .jumbotron {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .home .info-card .suscribe {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .home .info-card .suscribe input {
+    width: 70%;
+  }
+  .home .info-card .suscribe button {
+    width: 130px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header .menu {
+    display: block;
+  }
+  .portfolio .contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    padding: 5rem 0;
+  }
+  .about .cards-container {
+    padding-top: 3rem;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .footer {
+    background: url(../assets/img/bg\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

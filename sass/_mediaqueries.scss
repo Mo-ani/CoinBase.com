@@ -1,0 +1,94 @@
+@use "mixins";
+
+$gray: #F8F9FA;
+$gray-hover: rgb(114, 114, 114);
+$black: rgb(53, 53, 53);
+$blue-main: #0075FF;
+
+
+@media only screen and (min-width: 600px) {
+    .header{
+        @include mixins.flex-around
+    }
+    .home{
+        .info-card{
+            align-items: flex-start;
+        }
+        .suscribe{
+            margin-top: 2rem;
+            flex-direction: row;
+            gap: 2rem;
+            button{
+                width: 170px;
+                margin: 0;
+            }
+        }
+    }
+    .statistics{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .proccess{
+        .items-container{
+            @include mixins.flex-center;
+            padding: 0 2rem;
+            .items{
+                text-align: center;
+                i{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+    .footer{
+        .jumbotron{
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .home{
+        flex-direction: row;
+        justify-content: space-around;
+        .info-card{
+            .suscribe{
+                justify-content: flex-start;
+                gap: 1rem;
+                input{
+                    width: 70%;
+                }
+                button{
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header{
+        .menu{
+            display: block;
+        }
+    }
+    .portfolio{
+        .contain{
+            @include mixins.flex-center;
+        }
+    }
+    .about{
+        padding: 5rem 0;
+        .cards-container{
+            padding-top: 3rem;
+            flex-direction: row;
+            gap: 2rem;
+        }
+    }
+    .footer{
+        background: url(../assets/img/bg\ 1.png);
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+}
+
